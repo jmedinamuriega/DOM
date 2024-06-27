@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1-2-3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dom.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            min-height: 100vh;
+            background-color: rgba(161, 152, 152, 0.329);
+        }
+        .form {
+            margin-top: 20px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="data">
+        <h1>RealTimeData</h1>
+        <div id="datainfo">
+            <p>Loading data...</p>
+        </div>
+    </div>
+
+    <section class="form">
+        <form id="myForm" action="submit.php" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="box" onclick="changeColor()">Click me to change color</div>
+    <button class="button" onclick="changeTextSize()">Increase Text Size</button>
+    
+    <div id="hoverBox" style="width: 200px; height: 50px; background-color: lightyellow; margin-top: 20px;">
+        Hover over me
+    </div>
+</body>
